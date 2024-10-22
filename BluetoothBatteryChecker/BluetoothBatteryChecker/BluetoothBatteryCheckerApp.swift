@@ -13,16 +13,6 @@ struct BluetoothBatteryCheckerApp: App {
         WindowGroup {
             ContentView()
         }
-        .commands {
-            CommandGroup(replacing: .newItem) {
-                // Control + 1 입력 감지
-                Button(action: {
-                    NotificationCenter.default.post(name: Notification.Name("updateBluetoothInfo"), object: nil)
-                }) {
-                    Text("Control + 1")
-                }
-                .keyboardShortcut("1", modifiers: [.control])
-            }
-        }
     }
 }
+

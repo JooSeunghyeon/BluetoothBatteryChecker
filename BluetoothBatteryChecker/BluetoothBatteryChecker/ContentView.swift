@@ -46,7 +46,7 @@ struct ContentView: View {
                             Spacer()
                         }
                         .padding()
-                        .background(Color(NSColor.windowBackgroundColor).edgesIgnoringSafeArea(.all))
+                        .background(Color(NSColor.windowBackgroundColor))
                         .cornerRadius(15)
                         .shadow(radius: 5)
                     }
@@ -54,6 +54,13 @@ struct ContentView: View {
                 .padding(.horizontal)
             }
             .frame(maxHeight: 400) // 스크롤 가능한 영역의 최대 높이 설정
+            
+            // 10초 후 검색된 장치 수 표시
+            if bluetoothManager.totalDevicesCount > 0 {
+                Text("총 \(bluetoothManager.totalDevicesCount)개의 블루투스 장치가 검색되었습니다.")
+                    .font(.headline)
+                    .padding(.top, 20)
+            }
             
             // 스캔 버튼
             Button(action: {
@@ -76,8 +83,7 @@ struct ContentView: View {
                     .shadow(radius: 5)
             }
             .padding(.horizontal)
-            .padding(.bottom, 20)
-
+            .padding(.bottom,10)
         }
         .frame(minWidth: 400, minHeight: 600)
         .background(Color(NSColor.windowBackgroundColor).edgesIgnoringSafeArea(.all)) // macOS 배경 색상 적용
