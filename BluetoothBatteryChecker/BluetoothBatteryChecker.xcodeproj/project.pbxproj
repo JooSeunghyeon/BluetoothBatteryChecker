@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050166472CC7E27E000F174D /* BluetoothBatteryCheckerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050166462CC7E27E000F174D /* BluetoothBatteryCheckerApp.swift */; };
+		050166492CC7E27E000F174D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050166482CC7E27E000F174D /* ContentView.swift */; };
+		0501664B2CC7E27F000F174D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0501664A2CC7E27F000F174D /* Assets.xcassets */; };
+		0501664E2CC7E27F000F174D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0501664D2CC7E27F000F174D /* Preview Assets.xcassets */; };
+		050166592CC7E27F000F174D /* BluetoothBatteryCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050166582CC7E27F000F174D /* BluetoothBatteryCheckerTests.swift */; };
+		050166632CC7E27F000F174D /* BluetoothBatteryCheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050166622CC7E27F000F174D /* BluetoothBatteryCheckerUITests.swift */; };
+		050166652CC7E27F000F174D /* BluetoothBatteryCheckerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050166642CC7E27F000F174D /* BluetoothBatteryCheckerUITestsLaunchTests.swift */; };
+		050166732CC7E378000F174D /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050166722CC7E378000F174D /* IOBluetooth.framework */; };
+		050166752CC7E799000F174D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050166742CC7E799000F174D /* CoreBluetooth.framework */; };
+		050166772CC7E821000F174D /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050166762CC7E821000F174D /* BluetoothManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		050166552CC7E27F000F174D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0501663B2CC7E27E000F174D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 050166422CC7E27E000F174D;
+			remoteInfo = BluetoothBatteryChecker;
+		};
+		0501665F2CC7E27F000F174D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0501663B2CC7E27E000F174D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 050166422CC7E27E000F174D;
+			remoteInfo = BluetoothBatteryChecker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		050166432CC7E27E000F174D /* BluetoothBatteryChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = BluetoothBatteryChecker.app; path = /Users/juseunghyeon/Documents/BluetoothDeviceScanner/BluetoothBatteryChecker/build/Debug/BluetoothBatteryChecker.app; sourceTree = "<absolute>"; };
+		050166462CC7E27E000F174D /* BluetoothBatteryCheckerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothBatteryCheckerApp.swift; sourceTree = "<group>"; };
+		050166482CC7E27E000F174D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0501664A2CC7E27F000F174D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0501664D2CC7E27F000F174D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0501664F2CC7E27F000F174D /* BluetoothBatteryChecker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BluetoothBatteryChecker.entitlements; sourceTree = "<group>"; };
+		050166542CC7E27F000F174D /* BluetoothBatteryCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BluetoothBatteryCheckerTests.xctest; path = /Users/juseunghyeon/Documents/BluetoothDeviceScanner/BluetoothBatteryChecker/build/Debug/BluetoothBatteryChecker.app/Contents/PlugIns/BluetoothBatteryCheckerTests.xctest; sourceTree = "<absolute>"; };
+		050166582CC7E27F000F174D /* BluetoothBatteryCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothBatteryCheckerTests.swift; sourceTree = "<group>"; };
+		0501665E2CC7E27F000F174D /* BluetoothBatteryCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BluetoothBatteryCheckerUITests.xctest; path = "/Users/juseunghyeon/Documents/BluetoothDeviceScanner/BluetoothBatteryChecker/build/Debug/BluetoothBatteryCheckerUITests-Runner.app/Contents/PlugIns/BluetoothBatteryCheckerUITests.xctest"; sourceTree = "<absolute>"; };
+		050166622CC7E27F000F174D /* BluetoothBatteryCheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothBatteryCheckerUITests.swift; sourceTree = "<group>"; };
+		050166642CC7E27F000F174D /* BluetoothBatteryCheckerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothBatteryCheckerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		050166722CC7E378000F174D /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		050166742CC7E799000F174D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		050166762CC7E821000F174D /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		050166402CC7E27E000F174D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050166752CC7E799000F174D /* CoreBluetooth.framework in Frameworks */,
+				050166732CC7E378000F174D /* IOBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		050166512CC7E27F000F174D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0501665B2CC7E27F000F174D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0501663A2CC7E27E000F174D = {
+			isa = PBXGroup;
+			children = (
+				050166452CC7E27E000F174D /* BluetoothBatteryChecker */,
+				050166572CC7E27F000F174D /* BluetoothBatteryCheckerTests */,
+				050166612CC7E27F000F174D /* BluetoothBatteryCheckerUITests */,
+				050166712CC7E378000F174D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		050166452CC7E27E000F174D /* BluetoothBatteryChecker */ = {
+			isa = PBXGroup;
+			children = (
+				050166462CC7E27E000F174D /* BluetoothBatteryCheckerApp.swift */,
+				050166482CC7E27E000F174D /* ContentView.swift */,
+				0501664A2CC7E27F000F174D /* Assets.xcassets */,
+				0501664F2CC7E27F000F174D /* BluetoothBatteryChecker.entitlements */,
+				0501664C2CC7E27F000F174D /* Preview Content */,
+				050166762CC7E821000F174D /* BluetoothManager.swift */,
+			);
+			path = BluetoothBatteryChecker;
+			sourceTree = "<group>";
+		};
+		0501664C2CC7E27F000F174D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0501664D2CC7E27F000F174D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		050166572CC7E27F000F174D /* BluetoothBatteryCheckerTests */ = {
+			isa = PBXGroup;
+			children = (
+				050166582CC7E27F000F174D /* BluetoothBatteryCheckerTests.swift */,
+			);
+			path = BluetoothBatteryCheckerTests;
+			sourceTree = "<group>";
+		};
+		050166612CC7E27F000F174D /* BluetoothBatteryCheckerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				050166622CC7E27F000F174D /* BluetoothBatteryCheckerUITests.swift */,
+				050166642CC7E27F000F174D /* BluetoothBatteryCheckerUITestsLaunchTests.swift */,
+			);
+			path = BluetoothBatteryCheckerUITests;
+			sourceTree = "<group>";
+		};
+		050166712CC7E378000F174D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				050166742CC7E799000F174D /* CoreBluetooth.framework */,
+				050166722CC7E378000F174D /* IOBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		050166422CC7E27E000F174D /* BluetoothBatteryChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 050166682CC7E27F000F174D /* Build configuration list for PBXNativeTarget "BluetoothBatteryChecker" */;
+			buildPhases = (
+				0501663F2CC7E27E000F174D /* Sources */,
+				050166402CC7E27E000F174D /* Frameworks */,
+				050166412CC7E27E000F174D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BluetoothBatteryChecker;
+			productName = BluetoothBatteryChecker;
+			productReference = 050166432CC7E27E000F174D /* BluetoothBatteryChecker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		050166532CC7E27F000F174D /* BluetoothBatteryCheckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0501666B2CC7E27F000F174D /* Build configuration list for PBXNativeTarget "BluetoothBatteryCheckerTests" */;
+			buildPhases = (
+				050166502CC7E27F000F174D /* Sources */,
+				050166512CC7E27F000F174D /* Frameworks */,
+				050166522CC7E27F000F174D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				050166562CC7E27F000F174D /* PBXTargetDependency */,
+			);
+			name = BluetoothBatteryCheckerTests;
+			productName = BluetoothBatteryCheckerTests;
+			productReference = 050166542CC7E27F000F174D /* BluetoothBatteryCheckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0501665D2CC7E27F000F174D /* BluetoothBatteryCheckerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0501666E2CC7E27F000F174D /* Build configuration list for PBXNativeTarget "BluetoothBatteryCheckerUITests" */;
+			buildPhases = (
+				0501665A2CC7E27F000F174D /* Sources */,
+				0501665B2CC7E27F000F174D /* Frameworks */,
+				0501665C2CC7E27F000F174D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				050166602CC7E27F000F174D /* PBXTargetDependency */,
+			);
+			name = BluetoothBatteryCheckerUITests;
+			productName = BluetoothBatteryCheckerUITests;
+			productReference = 0501665E2CC7E27F000F174D /* BluetoothBatteryCheckerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0501663B2CC7E27E000F174D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					050166422CC7E27E000F174D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					050166532CC7E27F000F174D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 050166422CC7E27E000F174D;
+					};
+					0501665D2CC7E27F000F174D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 050166422CC7E27E000F174D;
+					};
+				};
+			};
+			buildConfigurationList = 0501663E2CC7E27E000F174D /* Build configuration list for PBXProject "BluetoothBatteryChecker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0501663A2CC7E27E000F174D;
+			productRefGroup = 0501663A2CC7E27E000F174D;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				050166422CC7E27E000F174D /* BluetoothBatteryChecker */,
+				050166532CC7E27F000F174D /* BluetoothBatteryCheckerTests */,
+				0501665D2CC7E27F000F174D /* BluetoothBatteryCheckerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		050166412CC7E27E000F174D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0501664E2CC7E27F000F174D /* Preview Assets.xcassets in Resources */,
+				0501664B2CC7E27F000F174D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		050166522CC7E27F000F174D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0501665C2CC7E27F000F174D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0501663F2CC7E27E000F174D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050166492CC7E27E000F174D /* ContentView.swift in Sources */,
+				050166772CC7E821000F174D /* BluetoothManager.swift in Sources */,
+				050166472CC7E27E000F174D /* BluetoothBatteryCheckerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		050166502CC7E27F000F174D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050166592CC7E27F000F174D /* BluetoothBatteryCheckerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0501665A2CC7E27F000F174D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050166632CC7E27F000F174D /* BluetoothBatteryCheckerUITests.swift in Sources */,
+				050166652CC7E27F000F174D /* BluetoothBatteryCheckerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		050166562CC7E27F000F174D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 050166422CC7E27E000F174D /* BluetoothBatteryChecker */;
+			targetProxy = 050166552CC7E27F000F174D /* PBXContainerItemProxy */;
+		};
+		050166602CC7E27F000F174D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 050166422CC7E27E000F174D /* BluetoothBatteryChecker */;
+			targetProxy = 0501665F2CC7E27F000F174D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		050166662CC7E27F000F174D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		050166672CC7E27F000F174D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		050166692CC7E27F000F174D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BluetoothBatteryChecker/BluetoothBatteryChecker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BluetoothBatteryChecker/Preview Content\"";
+				DEVELOPMENT_TEAM = L75C42574S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "이 앱은 블루투스 기기 정보를 확인하고 상태를 업데이트하기 위해 블루투스를 사용합니다.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juseunghyun.BluetoothBatteryChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0501666A2CC7E27F000F174D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BluetoothBatteryChecker/BluetoothBatteryChecker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BluetoothBatteryChecker/Preview Content\"";
+				DEVELOPMENT_TEAM = L75C42574S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "이 앱은 블루투스 기기 정보를 확인하고 상태를 업데이트하기 위해 블루투스를 사용합니다.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juseunghyun.BluetoothBatteryChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0501666C2CC7E27F000F174D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L75C42574S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juseunghyun.BluetoothBatteryCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluetoothBatteryChecker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BluetoothBatteryChecker";
+			};
+			name = Debug;
+		};
+		0501666D2CC7E27F000F174D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L75C42574S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juseunghyun.BluetoothBatteryCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluetoothBatteryChecker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BluetoothBatteryChecker";
+			};
+			name = Release;
+		};
+		0501666F2CC7E27F000F174D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L75C42574S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juseunghyun.BluetoothBatteryCheckerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = BluetoothBatteryChecker;
+			};
+			name = Debug;
+		};
+		050166702CC7E27F000F174D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L75C42574S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juseunghyun.BluetoothBatteryCheckerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = BluetoothBatteryChecker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0501663E2CC7E27E000F174D /* Build configuration list for PBXProject "BluetoothBatteryChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050166662CC7E27F000F174D /* Debug */,
+				050166672CC7E27F000F174D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		050166682CC7E27F000F174D /* Build configuration list for PBXNativeTarget "BluetoothBatteryChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050166692CC7E27F000F174D /* Debug */,
+				0501666A2CC7E27F000F174D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0501666B2CC7E27F000F174D /* Build configuration list for PBXNativeTarget "BluetoothBatteryCheckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0501666C2CC7E27F000F174D /* Debug */,
+				0501666D2CC7E27F000F174D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0501666E2CC7E27F000F174D /* Build configuration list for PBXNativeTarget "BluetoothBatteryCheckerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0501666F2CC7E27F000F174D /* Debug */,
+				050166702CC7E27F000F174D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0501663B2CC7E27E000F174D /* Project object */;
+}
