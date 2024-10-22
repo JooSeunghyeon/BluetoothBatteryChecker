@@ -24,6 +24,7 @@ class BluetoothManager: NSObject, ObservableObject, CBCentralManagerDelegate {
     // 스캔 시작
     func startScan() {
         devices.removeAll() // 기존 목록 초기화
+        totalDevicesCount = 0
         centralManager.scanForPeripherals(withServices: nil, options: [CBCentralManagerScanOptionAllowDuplicatesKey: false])
         
         // 10초 후 스캔 종료 및 장치 수 표시

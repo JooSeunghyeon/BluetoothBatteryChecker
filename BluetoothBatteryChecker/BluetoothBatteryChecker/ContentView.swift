@@ -52,6 +52,7 @@ struct ContentView: View {
                     }
                 }
                 .padding(.horizontal)
+                .padding(.bottom, 6)
             }
             .frame(maxHeight: 400) // 스크롤 가능한 영역의 최대 높이 설정
             
@@ -59,7 +60,7 @@ struct ContentView: View {
             if bluetoothManager.totalDevicesCount > 0 {
                 Text("총 \(bluetoothManager.totalDevicesCount)개의 블루투스 장치가 검색되었습니다.")
                     .font(.headline)
-                    .padding(.top, 20)
+                    .padding(.top, 10)
             }
             
             // 스캔 버튼
